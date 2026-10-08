@@ -4,15 +4,11 @@ Integração local de síntese de voz em português brasileiro com Chatterbox. A
 
 ## Chatterbox TTS
 
-### Experimento de tutorial natural
-
-Execute `.\.venv\Scripts\python.exe -u test_tutorial_natural.py` para comparar uma única referência masculina brasileira (`eduardo/calmo.wav`). São três testes curtos: padrão (expressividade 0,5, CFG 0,5, temperatura 0,8), suave (0,4 / 0,35 / 0,75) e suave com a abertura falada “Vamos começar.”. O roteiro principal e a semente são iguais. O terceiro teste mantém a abertura audível para avaliar o início da instrução seguinte, sem cortar palavras por tempo fixo. Isso é uma experiência de condicionamento durante a geração, não treinamento; não garante melhora. Os WAVs ficam em `outputs/audio/tutorial_*.wav`, com parâmetros em JSON e cópias completas em `experimento_tutorial/`.
-
 O carregador possui uma alternativa para o erro 1455 de memória virtual do Windows: lê os tensores F32 do checkpoint em partes, sem alterar os pesos. Ainda é necessário haver memória suficiente para o modelo e a geração.
 
 ### Interface local
 
-Execute `iniciar_interface.bat` ou `.\.venv\Scripts\python.exe interface.py` na raiz e abra **http://127.0.0.1:8765**. Mantenha o terminal aberto durante o uso. A interface permite escrever até 300 caracteres, comparar seis referências gravadas, ajustar expressividade, acompanhar a geração, ouvir, buscar uma posição no áudio e baixar os WAVs. Os áudios anteriores permanecem no histórico.
+Execute `iniciar_interface.bat` na raiz para abrir **http://127.0.0.1:8766**. Se executar diretamente `.\.venv\Scripts\python.exe interface.py`, a porta padrão será 8765. Mantenha o terminal aberto durante o uso. A interface permite escrever até 300 caracteres, comparar seis referências gravadas, ajustar expressividade, acompanhar a geração, ouvir, buscar uma posição no áudio e baixar os WAVs. Os áudios anteriores permanecem no histórico.
 
 Brisa, Campo e Aurora são nomes de apresentação das referências, não modelos diferentes. Brisa usa a amostra oficial PT-BR; Campo e Aurora usam outras amostras de português da demonstração oficial. O motor é sempre o Chatterbox PT-BR V3. Os botões de comparação reproduzem o mesmo roteiro de tutorial, sintetizado localmente com cada referência. O roteiro fica em `tts/voices/tutorial.txt` e os exemplos completos em `tts/voices/tutorial_brisa.wav`, `tutorial_campo.wav` e `tutorial_aurora.wav`. As referências originais são preservadas para as novas gerações.
 
@@ -24,14 +20,7 @@ As referências extras podem ser preparadas com `.\.venv\Scripts\python.exe tool
 
 Windows, Python 3.12 e ambiente isolado `.venv`. A instalação usa o código da demonstração oficial [ResembleAI/Chatterbox-Multilingual-TTS-pt-br](https://huggingface.co/spaces/ResembleAI/Chatterbox-Multilingual-TTS-pt-br), revisão `9e515821e826e207cd617a0fdd0223899ed108ea`, e os pesos [ResembleAI/Chatterbox-Multilingual-pt-br](https://huggingface.co/ResembleAI/Chatterbox-Multilingual-pt-br), do V3 Single Language Pack. O idioma interno é `pt`.
 
-```powershell
-.\.venv\Scripts\Activate.ps1
-python test_chatterbox.py
-```
-
-Também é possível executar sem ativar: `.\.venv\Scripts\python.exe test_chatterbox.py`.
-
-O teste gera `outputs/audio/teste_chatterbox.wav` e um relatório JSON com duração, sample rate, dispositivo e tempos. Modelos ficam em `models/pt-br-v3`, com revisões registradas em `provenance.json`. A primeira execução baixa os pesos; as seguintes reutilizam os arquivos locais.
+Modelos ficam em `models/pt-br-v3`, com revisões registradas em `provenance.json`. A primeira execução baixa os pesos; as seguintes reutilizam os arquivos locais.
 
 ```python
 from tts import ChatterboxTTS, gerar_audio
@@ -70,8 +59,6 @@ A integração instalada é `ia-voz-chatterbox-ptbr==0.1.0`, código oficial PT-
 A biblioteca carrega a referência em mono a 24 kHz e reamostra para 16 kHz internamente. Usa os primeiros 6 segundos para tokens de fala, os primeiros 10 segundos para o decodificador e a referência completa para o encoder de locutor. Por isso, os WAVs de inferência preservam toda a fala e removem apenas silêncio das bordas, com 200 ms de margem. Não recebem filtros, normalização, compressão ou equalização. Cópias completas ficam em `tts/voices/eduardo/originais/`; as gravações externas permanecem intactas.
 
 O relatório de todos os arquivos, comparação M4A/WAV e hashes está em `docs/voices/eduardo/source_analysis.json`. `import_manifest.json` registra a origem e os cortes de silêncio, e `roteiro_referencia.txt` preserva o roteiro da gravação. A correlação alta entre versões não garante ausência de artefatos perceptuais; uma comparação auditiva continua necessária.
-
-Execute o teste real com `.\.venv\Scripts\python.exe -u test_vozes_eduardo.py`. Ele reutiliza uma instância do modelo e gera `outputs/audio/teste_neutro.wav`, `teste_calmo.wav` e `teste_animado.wav`, com exatamente o mesmo texto, as mesmas divisões em frases e as mesmas sementes por trecho. A divisão evita o limite interno de 1.000 tokens de fala por chamada; os trechos são unidos com pausas iguais de 250 ms. Os JSONs registram texto, referência, parâmetros, duração e validação dos WAVs. Partes validadas podem ser reaproveitadas após interrupção.
 
 Os utilitários `tools/analisar_referencias_eduardo.py PASTA` e `tools/importar_vozes_eduardo.py PASTA` usam a pasta externa apenas como argumento da importação. O importador exige análise prévia e recusa sobrescrever referências existentes. Para análise de M4A, foi acrescentado apenas `imageio-ffmpeg==0.6.0` ao ambiente; ele fornece um FFmpeg local, sem reinstalar o motor.
 
