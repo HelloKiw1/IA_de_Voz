@@ -1,0 +1,139 @@
+{
+  "files": [
+    {
+      "name": "audio base do eduardo (animado) (sem ruido).wav",
+      "bytes": 7438124,
+      "sha256": "d40ef6697cc78014d17432f84142867a244adf4762456e2cb997aa0b9c345b64",
+      "duration_seconds": 38.74,
+      "sample_rate": 48000,
+      "channels": 2,
+      "peak_dbfs": -3.5890151470317417,
+      "rms_dbfs": -21.8745829678413,
+      "clipping_samples": 0,
+      "initial_silence_seconds": 5.88,
+      "final_silence_seconds": 1.2,
+      "silent_windows_percent": 25.451729478575114,
+      "codec": "Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s",
+      "format": "wav",
+      "subtype": "PCM_16"
+    },
+    {
+      "name": "audio base do eduardo (animado).m4a",
+      "bytes": 601496,
+      "sha256": "60f6ac19762bffa2161c5b9e517e3b6835ee7dfb549a41b62efa01c0fa531d08",
+      "duration_seconds": 36.885333333333335,
+      "sample_rate": 48000,
+      "channels": 2,
+      "peak_dbfs": -3.1035910731966156,
+      "rms_dbfs": -21.19658954643971,
+      "clipping_samples": 0,
+      "initial_silence_seconds": 0.12,
+      "final_silence_seconds": 0.16533333333333333,
+      "silent_windows_percent": 19.945799457994582,
+      "codec": "Stream #0:0[0x1](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 128 kb/s (default)",
+      "format": "m4a"
+    },
+    {
+      "name": "audio base do eduardo (calmo) (sem ruido).wav",
+      "bytes": 6631724,
+      "sha256": "0c12cac7433754f861ab95fae5d3f21346248c8bc0270386fcb85db28e13b763",
+      "duration_seconds": 34.54,
+      "sample_rate": 48000,
+      "channels": 2,
+      "peak_dbfs": -4.688331354239808,
+      "rms_dbfs": -23.750497788745626,
+      "clipping_samples": 0,
+      "initial_silence_seconds": 4.0,
+      "final_silence_seconds": 1.62,
+      "silent_windows_percent": 23.393167342211928,
+      "codec": "Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s",
+      "format": "wav",
+      "subtype": "PCM_16"
+    },
+    {
+      "name": "audio base do eduardo (calmo).m4a",
+      "bytes": 523084,
+      "sha256": "3c276fc585d98c14b2da1a33b68554df6b3c4178cbc4f4d9d78614e268ae0d00",
+      "duration_seconds": 32.04266666666667,
+      "sample_rate": 48000,
+      "channels": 2,
+      "peak_dbfs": -4.174402236992166,
+      "rms_dbfs": -22.94048586512643,
+      "clipping_samples": 0,
+      "initial_silence_seconds": 0.42,
+      "final_silence_seconds": 0.06266666666666666,
+      "silent_windows_percent": 15.782907049282596,
+      "codec": "Stream #0:0[0x1](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 128 kb/s (default)",
+      "format": "m4a"
+    },
+    {
+      "name": "audio base do eduardo (neutro) (sem ruido).wav",
+      "bytes": 7760684,
+      "sha256": "d3e067fb5e70e94ad8f3448ec84fdddd60664498092181e844438a9c08f112ba",
+      "duration_seconds": 40.42,
+      "sample_rate": 48000,
+      "channels": 2,
+      "peak_dbfs": -3.801969943083434,
+      "rms_dbfs": -25.27311215684414,
+      "clipping_samples": 0,
+      "initial_silence_seconds": 4.4,
+      "final_silence_seconds": 2.0,
+      "silent_windows_percent": 24.740227610094013,
+      "codec": "Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s",
+      "format": "wav",
+      "subtype": "PCM_16"
+    },
+    {
+      "name": "audio base do eduardo (neutro).m4a",
+      "bytes": 617420,
+      "sha256": "c9e701d95ae8b1efb9ca3024010dabeb5a119244c6fded4c130a44f13ac2301d",
+      "duration_seconds": 37.86666666666667,
+      "sample_rate": 48000,
+      "channels": 2,
+      "peak_dbfs": -3.3044533699381065,
+      "rms_dbfs": -24.5191959618715,
+      "clipping_samples": 0,
+      "initial_silence_seconds": 0.78,
+      "final_silence_seconds": 0.006666666666666667,
+      "silent_windows_percent": 14.044350580781414,
+      "codec": "Stream #0:0[0x1](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 128 kb/s (default)",
+      "format": "m4a"
+    },
+    {
+      "name": "roteiro base do eduardo.txt",
+      "bytes": 526,
+      "sha256": "cfe8418826b2e91dee3509522a4e0105aa5e32c9f24e74cbb2ed30f40063ad3f"
+    }
+  ],
+  "comparisons": [
+    {
+      "profile": "neutro",
+      "original": "audio base do eduardo (neutro).m4a",
+      "treated": "audio base do eduardo (neutro) (sem ruido).wav",
+      "alignment_seconds": 1.645625,
+      "correlation": 0.9952177727416966,
+      "gain_db": -0.5297285029406973,
+      "relative_residual_rms": 0.09768254309892654
+    },
+    {
+      "profile": "calmo",
+      "original": "audio base do eduardo (calmo).m4a",
+      "treated": "audio base do eduardo (calmo) (sem ruido).wav",
+      "alignment_seconds": 1.98525,
+      "correlation": 0.9753366194040193,
+      "gain_db": -0.7285504377326903,
+      "relative_residual_rms": 0.2207229733467102
+    },
+    {
+      "profile": "animado",
+      "original": "audio base do eduardo (animado).m4a",
+      "treated": "audio base do eduardo (animado) (sem ruido).wav",
+      "alignment_seconds": 1.989375,
+      "correlation": 0.9817787070933834,
+      "gain_db": -0.6429813944341666,
+      "relative_residual_rms": 0.1900285929441452
+    }
+  ],
+  "silence_threshold_dbfs": -45,
+  "limitations": "Métricas não substituem escuta; clipping AAC é aproximado e pode incluir overshoot do codec."
+}

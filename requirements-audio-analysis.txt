@@ -1,0 +1,2 @@
+# Optional, only for auditing/converting source M4A recordings.
+imageio-ffmpeg==0.6.0

@@ -1,0 +1,7 @@
+{
+  "samples": {
+    "pt_m1": "https://storage.googleapis.com/chatterbox-demo-samples/mtl_prompts/pt_m1.flac",
+    "pt_prompts1": "https://storage.googleapis.com/chatterbox-demo-samples/mtl_prompts/pt/pt_prompts1.flac"
+  },
+  "note": "Official reference recordings; UI names are illustrative, not model names."
+}

@@ -1,0 +1,18 @@
+# Versions required by the official PT-BR V3 inference implementation.
+torch==2.8.0
+torchaudio==2.8.0
+numpy>=1.26,<2
+librosa==0.10.0
+resampy==0.4.3
+s3tokenizer
+transformers==4.46.3
+diffusers==0.29.0
+omegaconf==2.3.0
+resemble-perth==1.0.1
+silero-vad==5.1.2
+conformer==0.3.2
+safetensors
+soundfile
+huggingface-hub>=0.25,<1
+hf_xet
+-e ./vendor/chatterbox

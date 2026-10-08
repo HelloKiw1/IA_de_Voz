@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+models/
+outputs/audio/
+tts/voices/*.wav
+vendor/chatterbox/*.egg-info/

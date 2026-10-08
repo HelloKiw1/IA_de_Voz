@@ -1,0 +1,77 @@
+[
+  {
+    "profile": "neutro",
+    "source_name": "audio base do eduardo (neutro) (sem ruido).wav",
+    "source_sha256": "d3e067fb5e70e94ad8f3448ec84fdddd60664498092181e844438a9c08f112ba",
+    "full_copy": "tts/voices/eduardo/originais/neutro.wav",
+    "reference": "tts/voices/eduardo/neutro.wav",
+    "removed_start_seconds": 4.2,
+    "removed_end_seconds": 1.8,
+    "validation": {
+      "duration_seconds": 34.42,
+      "sample_rate": 48000,
+      "channels": 2,
+      "peak_dbfs": -3.801969943083434,
+      "rms_dbfs": -24.57527028061305,
+      "clipping_samples": 0,
+      "initial_silence_seconds": 0.2,
+      "final_silence_seconds": 0.2,
+      "silent_windows_percent": 11.621150493898897,
+      "file": "tts/voices/eduardo/neutro.wav",
+      "bytes": 6608684,
+      "format": "WAV",
+      "subtype": "PCM_16",
+      "status": "OK"
+    }
+  },
+  {
+    "profile": "calmo",
+    "source_name": "audio base do eduardo (calmo) (sem ruido).wav",
+    "source_sha256": "0c12cac7433754f861ab95fae5d3f21346248c8bc0270386fcb85db28e13b763",
+    "full_copy": "tts/voices/eduardo/originais/calmo.wav",
+    "reference": "tts/voices/eduardo/calmo.wav",
+    "removed_start_seconds": 3.8,
+    "removed_end_seconds": 1.42,
+    "validation": {
+      "duration_seconds": 29.32,
+      "sample_rate": 48000,
+      "channels": 2,
+      "peak_dbfs": -4.688331354239808,
+      "rms_dbfs": -23.038933105039803,
+      "clipping_samples": 0,
+      "initial_silence_seconds": 0.2,
+      "final_silence_seconds": 0.2,
+      "silent_windows_percent": 9.754433833560709,
+      "file": "tts/voices/eduardo/calmo.wav",
+      "bytes": 5629484,
+      "format": "WAV",
+      "subtype": "PCM_16",
+      "status": "OK"
+    }
+  },
+  {
+    "profile": "animado",
+    "source_name": "audio base do eduardo (animado) (sem ruido).wav",
+    "source_sha256": "d40ef6697cc78014d17432f84142867a244adf4762456e2cb997aa0b9c345b64",
+    "full_copy": "tts/voices/eduardo/originais/animado.wav",
+    "reference": "tts/voices/eduardo/animado.wav",
+    "removed_start_seconds": 5.68,
+    "removed_end_seconds": 1.0,
+    "validation": {
+      "duration_seconds": 32.06,
+      "sample_rate": 48000,
+      "channels": 2,
+      "peak_dbfs": -3.5890151470317417,
+      "rms_dbfs": -21.05263434012763,
+      "clipping_samples": 0,
+      "initial_silence_seconds": 0.2,
+      "final_silence_seconds": 0.2,
+      "silent_windows_percent": 9.91890205864005,
+      "file": "tts/voices/eduardo/animado.wav",
+      "bytes": 6155564,
+      "format": "WAV",
+      "subtype": "PCM_16",
+      "status": "OK"
+    }
+  }
+]

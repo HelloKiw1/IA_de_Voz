@@ -1,0 +1,29 @@
+{
+  "voice": "brisa",
+  "text": "Olá! Neste tutorial, eu vou mostrar para você como utilizar algumas das principais funções do sistema.\n\nPara começar, acesse o menu principal.\n\nAgora, procure pela opção que você deseja utilizar e clique nela para abrir.\n\nNa próxima tela, confira com atenção as informações exibidas. Caso seja necessário, preencha ou altere os campos disponíveis.\n\nDepois de fazer todas as alterações, revise as informações para ter certeza de que está tudo correto.\n\nQuando terminar, clique no botão Salvar.\n\nPronto! A operação foi concluída com sucesso.",
+  "reference": "pt_br_f2.wav",
+  "sample_rate": 24000,
+  "duration_seconds": 38.04,
+  "bytes": 1825964,
+  "generation_seconds": 869.6731104,
+  "parts": [
+    {
+      "text": "Olá! Neste tutorial, eu vou mostrar para você como utilizar algumas das principais funções do sistema. Para começar, acesse o menu principal. Agora, procure pela opção que você deseja utilizar e clique nela para abrir.",
+      "tokens": 375,
+      "duration": 14.92,
+      "generation_seconds": 405.54130819999955
+    },
+    {
+      "text": "Na próxima tela, confira com atenção as informações exibidas. Caso seja necessário, preencha ou altere os campos disponíveis.",
+      "tokens": 214,
+      "duration": 8.48,
+      "generation_seconds": 185.66372520000004
+    },
+    {
+      "text": "Depois de fazer todas as alterações, revise as informações para ter certeza de que está tudo correto. Quando terminar, clique no botão Salvar. Pronto! A operação foi concluída com sucesso.",
+      "tokens": 348,
+      "duration": 13.84,
+      "generation_seconds": 258.0883375000003
+    }
+  ]
+}

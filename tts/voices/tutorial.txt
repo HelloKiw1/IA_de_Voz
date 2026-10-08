@@ -1,0 +1,13 @@
+Olá! Neste tutorial, eu vou mostrar para você como utilizar algumas das principais funções do sistema.
+
+Para começar, acesse o menu principal.
+
+Agora, procure pela opção que você deseja utilizar e clique nela para abrir.
+
+Na próxima tela, confira com atenção as informações exibidas. Caso seja necessário, preencha ou altere os campos disponíveis.
+
+Depois de fazer todas as alterações, revise as informações para ter certeza de que está tudo correto.
+
+Quando terminar, clique no botão Salvar.
+
+Pronto! A operação foi concluída com sucesso.

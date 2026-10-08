@@ -1,0 +1,306 @@
+{
+  "environment": {
+    "torch": "2.8.0+cpu",
+    "chatterbox": "0.1.0",
+    "model": "ResembleAI/Chatterbox-Multilingual-pt-br",
+    "device": "cpu",
+    "gpu": "Sem GPU CUDA",
+    "api": "(self, text, audio_prompt_path=None, exaggeration=0.5, cfg_weight=0.5, temperature=0.8, language_id='en')"
+  },
+  "results": [
+    {
+      "voice": "neutro",
+      "text": "Olá. Neste tutorial, vamos aprender como utilizar algumas das principais funções do sistema. Primeiro, acesse o menu principal. Em seguida, selecione a opção desejada. Durante o processo, observe atentamente as informações exibidas na tela. Ao finalizar as alterações, clique em salvar para concluir a operação.",
+      "reference": {
+        "duration_seconds": 34.42,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak_dbfs": -3.801969943083434,
+        "rms_dbfs": -24.57527028061305,
+        "clipping_samples": 0,
+        "initial_silence_seconds": 0.2,
+        "final_silence_seconds": 0.2,
+        "silent_windows_percent": 11.621150493898897,
+        "file": "tts/voices/eduardo/neutro.wav",
+        "bytes": 6608684,
+        "format": "WAV",
+        "subtype": "PCM_16",
+        "status": "OK"
+      },
+      "output": {
+        "duration_seconds": 29.79,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.346790076480119,
+        "rms_dbfs": -23.52736353424932,
+        "clipping_samples": 0,
+        "initial_silence_seconds": 0.5,
+        "final_silence_seconds": 0.77,
+        "silent_windows_percent": 24.496644295302016,
+        "file": "outputs/audio/teste_neutro.wav",
+        "bytes": 1429964,
+        "format": "WAV",
+        "subtype": "PCM_16",
+        "status": "OK"
+      },
+      "parts": [
+        {
+          "identity": {
+            "text": "Olá. Neste tutorial, vamos aprender como utilizar algumas das principais funções do sistema.",
+            "seed": 42,
+            "reference_sha256": "799527d225e6f8f1ba4b084450b7f40a9e0ec036f1fde8aa894660bb5465860d",
+            "model": "ResembleAI/Chatterbox-Multilingual-pt-br",
+            "defaults": {
+              "exaggeration": 0.5,
+              "cfg_weight": 0.5,
+              "temperature": 0.8
+            }
+          },
+          "tokens": 202,
+          "generation_seconds": 253.29641899999842
+        },
+        {
+          "identity": {
+            "text": "Primeiro, acesse o menu principal. Em seguida, selecione a opção desejada.",
+            "seed": 43,
+            "reference_sha256": "799527d225e6f8f1ba4b084450b7f40a9e0ec036f1fde8aa894660bb5465860d",
+            "model": "ResembleAI/Chatterbox-Multilingual-pt-br",
+            "defaults": {
+              "exaggeration": 0.5,
+              "cfg_weight": 0.5,
+              "temperature": 0.8
+            }
+          },
+          "tokens": 189,
+          "generation_seconds": 232.13358580000204
+        },
+        {
+          "identity": {
+            "text": "Durante o processo, observe atentamente as informações exibidas na tela.",
+            "seed": 44,
+            "reference_sha256": "799527d225e6f8f1ba4b084450b7f40a9e0ec036f1fde8aa894660bb5465860d",
+            "model": "ResembleAI/Chatterbox-Multilingual-pt-br",
+            "defaults": {
+              "exaggeration": 0.5,
+              "cfg_weight": 0.5,
+              "temperature": 0.8
+            }
+          },
+          "tokens": 179,
+          "generation_seconds": 228.55206460000045
+        },
+        {
+          "identity": {
+            "text": "Ao finalizar as alterações, clique em salvar para concluir a operação.",
+            "seed": 45,
+            "reference_sha256": "799527d225e6f8f1ba4b084450b7f40a9e0ec036f1fde8aa894660bb5465860d",
+            "model": "ResembleAI/Chatterbox-Multilingual-pt-br",
+            "defaults": {
+              "exaggeration": 0.5,
+              "cfg_weight": 0.5,
+              "temperature": 0.8
+            }
+          },
+          "tokens": 164,
+          "generation_seconds": 178.15522520000013
+        }
+      ]
+    },
+    {
+      "voice": "calmo",
+      "text": "Olá. Neste tutorial, vamos aprender como utilizar algumas das principais funções do sistema. Primeiro, acesse o menu principal. Em seguida, selecione a opção desejada. Durante o processo, observe atentamente as informações exibidas na tela. Ao finalizar as alterações, clique em salvar para concluir a operação.",
+      "reference": {
+        "duration_seconds": 29.32,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak_dbfs": -4.688331354239808,
+        "rms_dbfs": -23.038933105039803,
+        "clipping_samples": 0,
+        "initial_silence_seconds": 0.2,
+        "final_silence_seconds": 0.2,
+        "silent_windows_percent": 9.754433833560709,
+        "file": "tts/voices/eduardo/calmo.wav",
+        "bytes": 5629484,
+        "format": "WAV",
+        "subtype": "PCM_16",
+        "status": "OK"
+      },
+      "output": {
+        "duration_seconds": 30.23,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.624222692253023,
+        "rms_dbfs": -22.530952494952302,
+        "clipping_samples": 0,
+        "initial_silence_seconds": 0.02,
+        "final_silence_seconds": 0.67,
+        "silent_windows_percent": 20.502645502645503,
+        "file": "outputs/audio/teste_calmo.wav",
+        "bytes": 1451084,
+        "format": "WAV",
+        "subtype": "PCM_16",
+        "status": "OK"
+      },
+      "parts": [
+        {
+          "identity": {
+            "text": "Olá. Neste tutorial, vamos aprender como utilizar algumas das principais funções do sistema.",
+            "seed": 42,
+            "reference_sha256": "25c7d044291d1aab8e7216b22c14f84d91c79e125c659fbbf7247126b81095a5",
+            "model": "ResembleAI/Chatterbox-Multilingual-pt-br",
+            "defaults": {
+              "exaggeration": 0.5,
+              "cfg_weight": 0.5,
+              "temperature": 0.8
+            }
+          },
+          "tokens": 221,
+          "generation_seconds": 233.1105792999988
+        },
+        {
+          "identity": {
+            "text": "Primeiro, acesse o menu principal. Em seguida, selecione a opção desejada.",
+            "seed": 43,
+            "reference_sha256": "25c7d044291d1aab8e7216b22c14f84d91c79e125c659fbbf7247126b81095a5",
+            "model": "ResembleAI/Chatterbox-Multilingual-pt-br",
+            "defaults": {
+              "exaggeration": 0.5,
+              "cfg_weight": 0.5,
+              "temperature": 0.8
+            }
+          },
+          "tokens": 199,
+          "generation_seconds": 276.33704040000157
+        },
+        {
+          "identity": {
+            "text": "Durante o processo, observe atentamente as informações exibidas na tela.",
+            "seed": 44,
+            "reference_sha256": "25c7d044291d1aab8e7216b22c14f84d91c79e125c659fbbf7247126b81095a5",
+            "model": "ResembleAI/Chatterbox-Multilingual-pt-br",
+            "defaults": {
+              "exaggeration": 0.5,
+              "cfg_weight": 0.5,
+              "temperature": 0.8
+            }
+          },
+          "tokens": 171,
+          "generation_seconds": 232.6407270999989
+        },
+        {
+          "identity": {
+            "text": "Ao finalizar as alterações, clique em salvar para concluir a operação.",
+            "seed": 45,
+            "reference_sha256": "25c7d044291d1aab8e7216b22c14f84d91c79e125c659fbbf7247126b81095a5",
+            "model": "ResembleAI/Chatterbox-Multilingual-pt-br",
+            "defaults": {
+              "exaggeration": 0.5,
+              "cfg_weight": 0.5,
+              "temperature": 0.8
+            }
+          },
+          "tokens": 154,
+          "generation_seconds": 131.77245419999963
+        }
+      ]
+    },
+    {
+      "voice": "animado",
+      "text": "Olá. Neste tutorial, vamos aprender como utilizar algumas das principais funções do sistema. Primeiro, acesse o menu principal. Em seguida, selecione a opção desejada. Durante o processo, observe atentamente as informações exibidas na tela. Ao finalizar as alterações, clique em salvar para concluir a operação.",
+      "reference": {
+        "duration_seconds": 32.06,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak_dbfs": -3.5890151470317417,
+        "rms_dbfs": -21.05263434012763,
+        "clipping_samples": 0,
+        "initial_silence_seconds": 0.2,
+        "final_silence_seconds": 0.2,
+        "silent_windows_percent": 9.91890205864005,
+        "file": "tts/voices/eduardo/animado.wav",
+        "bytes": 6155564,
+        "format": "WAV",
+        "subtype": "PCM_16",
+        "status": "OK"
+      },
+      "output": {
+        "duration_seconds": 29.67,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.663613567680789,
+        "rms_dbfs": -21.199950309536142,
+        "clipping_samples": 0,
+        "initial_silence_seconds": 0.02,
+        "final_silence_seconds": 0.55,
+        "silent_windows_percent": 21.024258760107816,
+        "file": "outputs/audio/teste_animado.wav",
+        "bytes": 1424204,
+        "format": "WAV",
+        "subtype": "PCM_16",
+        "status": "OK"
+      },
+      "parts": [
+        {
+          "identity": {
+            "text": "Olá. Neste tutorial, vamos aprender como utilizar algumas das principais funções do sistema.",
+            "seed": 42,
+            "reference_sha256": "98889931b65f96b13ba8d30a9fceb4e91b2f92efd26f2d2d73b5651b27c78dd2",
+            "model": "ResembleAI/Chatterbox-Multilingual-pt-br",
+            "defaults": {
+              "exaggeration": 0.5,
+              "cfg_weight": 0.5,
+              "temperature": 0.8
+            }
+          },
+          "tokens": 218,
+          "generation_seconds": 191.93209209999986
+        },
+        {
+          "identity": {
+            "text": "Primeiro, acesse o menu principal. Em seguida, selecione a opção desejada.",
+            "seed": 43,
+            "reference_sha256": "98889931b65f96b13ba8d30a9fceb4e91b2f92efd26f2d2d73b5651b27c78dd2",
+            "model": "ResembleAI/Chatterbox-Multilingual-pt-br",
+            "defaults": {
+              "exaggeration": 0.5,
+              "cfg_weight": 0.5,
+              "temperature": 0.8
+            }
+          },
+          "tokens": 181,
+          "generation_seconds": 193.02148060000036
+        },
+        {
+          "identity": {
+            "text": "Durante o processo, observe atentamente as informações exibidas na tela.",
+            "seed": 44,
+            "reference_sha256": "98889931b65f96b13ba8d30a9fceb4e91b2f92efd26f2d2d73b5651b27c78dd2",
+            "model": "ResembleAI/Chatterbox-Multilingual-pt-br",
+            "defaults": {
+              "exaggeration": 0.5,
+              "cfg_weight": 0.5,
+              "temperature": 0.8
+            }
+          },
+          "tokens": 166,
+          "generation_seconds": 217.3562032000009
+        },
+        {
+          "identity": {
+            "text": "Ao finalizar as alterações, clique em salvar para concluir a operação.",
+            "seed": 45,
+            "reference_sha256": "98889931b65f96b13ba8d30a9fceb4e91b2f92efd26f2d2d73b5651b27c78dd2",
+            "model": "ResembleAI/Chatterbox-Multilingual-pt-br",
+            "defaults": {
+              "exaggeration": 0.5,
+              "cfg_weight": 0.5,
+              "temperature": 0.8
+            }
+          },
+          "tokens": 166,
+          "generation_seconds": 215.0668050000022
+        }
+      ]
+    }
+  ]
+}

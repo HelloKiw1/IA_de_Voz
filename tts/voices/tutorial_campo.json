@@ -1,0 +1,29 @@
+{
+  "voice": "campo",
+  "text": "Olá! Neste tutorial, eu vou mostrar para você como utilizar algumas das principais funções do sistema.\n\nPara começar, acesse o menu principal.\n\nAgora, procure pela opção que você deseja utilizar e clique nela para abrir.\n\nNa próxima tela, confira com atenção as informações exibidas. Caso seja necessário, preencha ou altere os campos disponíveis.\n\nDepois de fazer todas as alterações, revise as informações para ter certeza de que está tudo correto.\n\nQuando terminar, clique no botão Salvar.\n\nPronto! A operação foi concluída com sucesso.",
+  "reference": "pt_m1.wav",
+  "sample_rate": 24000,
+  "duration_seconds": 42.84,
+  "bytes": 2056364,
+  "generation_seconds": 1101.7639157000003,
+  "parts": [
+    {
+      "text": "Olá! Neste tutorial, eu vou mostrar para você como utilizar algumas das principais funções do sistema. Para começar, acesse o menu principal. Agora, procure pela opção que você deseja utilizar e clique nela para abrir.",
+      "tokens": 407,
+      "duration": 16.2,
+      "generation_seconds": 354.54236479999963
+    },
+    {
+      "text": "Na próxima tela, confira com atenção as informações exibidas. Caso seja necessário, preencha ou altere os campos disponíveis.",
+      "tokens": 249,
+      "duration": 9.88,
+      "generation_seconds": 248.6250594000012
+    },
+    {
+      "text": "Depois de fazer todas as alterações, revise as informações para ter certeza de que está tudo correto. Quando terminar, clique no botão Salvar. Pronto! A operação foi concluída com sucesso.",
+      "tokens": 401,
+      "duration": 15.96,
+      "generation_seconds": 488.2422407999984
+    }
+  ]
+}
